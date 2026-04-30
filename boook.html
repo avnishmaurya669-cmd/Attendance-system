@@ -1,0 +1,12 @@
+<h2>Library</h2>
+
+<form method="POST">
+    <input type="text" name="book" placeholder="Book Name">
+    <button>Add Book</button>
+</form>
+
+<ul>
+    {% for b in books %}
+    <li>{{b[1]}}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+import sqlite
+db = sqlite3.connect("database.db")
+
+db.execute("CREATE TABLE students(id INTEGER PRIMARY KEY, name TEXT)")
+db.execute("CREATE TABLE attendance(id INTEGER PRIMARY KEY, student_id INTEGER, status TEXT)")
+db.execute("CREATE TABLE books(id INTEGER PRIMARY KEY, name TEXT)")
+
+db.commit()
+db.close()

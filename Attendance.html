@@ -1,0 +1,16 @@
+<h2>Attendance</h2>
+
+<form method="POST">
+    <select name="student_id">
+        {% for s in students %}
+        <option value="{{s[0]}}">{{s[1]}}</option>
+        {% endfor %}
+    </select>
+
+    <select name="status">
+        <option>Present</option>
+        <option>Absent</option>
+    </select>
+
+    <button>Save</button>
+</form>
